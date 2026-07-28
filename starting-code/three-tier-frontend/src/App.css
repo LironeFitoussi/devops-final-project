@@ -1,0 +1,289 @@
+.page {
+  text-align: left;
+  padding: 24px 24px 64px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.site-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.tagline {
+  color: var(--text);
+  text-align: center;
+  margin-top: 12px;
+}
+
+.nav-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+  border-bottom: 1px solid var(--wood-border);
+  padding-bottom: 16px;
+}
+
+.nav-bar .brand {
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 24px;
+  color: var(--wood-dark);
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.nav-links,
+.nav-auth {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.nav-links a,
+.nav-auth a {
+  color: var(--text);
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.nav-links a.active,
+.nav-auth a.active {
+  color: var(--wood-accent);
+  font-weight: 600;
+}
+
+.nav-user {
+  font-size: 15px;
+  color: var(--text);
+}
+
+.link-button {
+  background: none;
+  border: none;
+  color: var(--wood-accent);
+  cursor: pointer;
+  font-size: 15px;
+  padding: 0;
+  font-weight: 600;
+}
+
+.link-button:hover,
+.nav-links a:hover,
+.nav-auth a:hover {
+  text-decoration: underline;
+}
+
+.status {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.status-error {
+  color: #b23b3b;
+}
+
+.post-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.post-card {
+  border: 1px solid var(--wood-border);
+  border-radius: 8px;
+  padding: 20px 24px;
+  background: var(--wood-card-bg);
+}
+
+.post-card h2 {
+  font-family: Georgia, 'Times New Roman', serif;
+  margin: 0 0 4px;
+  color: var(--wood-dark);
+}
+
+.meta {
+  font-size: 14px;
+  color: var(--text);
+  margin: 0 0 12px;
+}
+
+.excerpt {
+  margin: 0 0 16px;
+}
+
+.read-more,
+.back-link {
+  background: none;
+  border: none;
+  color: var(--wood-accent);
+  font-weight: 600;
+  cursor: pointer;
+  padding: 0;
+  font-size: 15px;
+}
+
+.read-more:hover,
+.back-link:hover {
+  text-decoration: underline;
+}
+
+.back-link {
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.post-detail h2 {
+  font-family: Georgia, 'Times New Roman', serif;
+  color: var(--wood-dark);
+  margin: 0 0 4px;
+}
+
+.post-detail .content {
+  line-height: 1.6;
+  white-space: pre-line;
+}
+
+.image-embed {
+  margin: 12px 0 16px;
+}
+
+.image-embed img {
+  max-width: 100%;
+  border-radius: 8px;
+  display: block;
+}
+
+.tool-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+.tool-card {
+  border: 1px solid var(--wood-border);
+  border-radius: 8px;
+  background: var(--wood-card-bg);
+  overflow: hidden;
+}
+
+.tool-card .image-embed {
+  margin: 0;
+}
+
+.tool-card .image-embed img {
+  border-radius: 0;
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+}
+
+.tool-card-body {
+  padding: 16px 20px;
+}
+
+.tool-card h2 {
+  font-family: Georgia, 'Times New Roman', serif;
+  margin: 0 0 4px;
+  color: var(--wood-dark);
+  font-size: 20px;
+}
+
+.price {
+  font-weight: 700;
+  color: var(--wood-accent);
+  margin: 0 0 4px;
+}
+
+.page-form h2 {
+  font-family: Georgia, 'Times New Roman', serif;
+  color: var(--wood-dark);
+}
+
+.form-note {
+  color: var(--text);
+  font-size: 14px;
+  margin: 0 0 16px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-width: 480px;
+}
+
+.form label {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 14px;
+  color: var(--text);
+}
+
+.form input,
+.form textarea {
+  font: inherit;
+  padding: 8px 10px;
+  border: 1px solid var(--wood-border);
+  border-radius: 6px;
+  background: var(--bg);
+  color: var(--text-h);
+}
+
+.form textarea {
+  resize: vertical;
+}
+
+.primary {
+  align-self: flex-start;
+  background: var(--wood-accent);
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 20px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.primary:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.auth-view {
+  max-width: 400px;
+  margin: 20px auto 0;
+}
+
+.auth-tabs {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.auth-tabs .tab {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid var(--wood-border);
+  background: var(--wood-card-bg);
+  color: var(--text);
+  cursor: pointer;
+  border-radius: 6px;
+  font-size: 15px;
+}
+
+.auth-tabs .tab.active {
+  background: var(--wood-accent);
+  color: #fff;
+  border-color: var(--wood-accent);
+}
